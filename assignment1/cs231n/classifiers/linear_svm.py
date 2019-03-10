@@ -80,7 +80,7 @@ def svm_loss_vectorized(W, X, y, reg):
   num_train = X.shape[0]
   num_class = W.shape[1]
   # Fully vectorized version
-  # On Macbook Pro(early 2015), the time used by vetorized implementation is 
+  # On Macbook Pro(early 2015), the time used by vectorized implementation is 
   # two degrees of magnitude less than that by naive implementation.
   loss_matrix = np.dot(X, W)
   real_score = loss_matrix[np.arange(num_train), y].reshape(-1, 1)
@@ -110,7 +110,7 @@ def svm_loss_vectorized(W, X, y, reg):
   #  dW[:, y[i]] -= np.sum(dW, axis=1)
   
   # Fully vectorized version
-  # On Macbook Pro(early 2015), the time used by vetorized implementation is 
+  # On Macbook Pro(early 2015), the time used by vectorized implementation is 
   # two degrees of magnitude less than that by naive implementation.
   loss_criterior_bi = np.zeros(loss_criterior.shape)
   loss_criterior_bi[loss_criterior > 0] = 1
