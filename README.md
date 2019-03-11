@@ -18,6 +18,10 @@ Click the specific file in this repository and check the corresponding code. I h
 
 Just `clone` it - you know, the normal procedure.
 
+## Learning suggestion
+
+1. For assignment 1, study lecture 1 to lecture 6.
+
 ## What is the current progress?
 
 Till 10/03/2019, the implementation of [assignment 1](https://github.com/saintethan/Stanford-cs231n/tree/master/assignment1) has been completed.
